@@ -17,16 +17,6 @@ object Methods {
 
     }
 
-    /** --------- ProfileManager -------- */
-
-    /** --------- ServiceManager -------- */
-
-    /** --------- Profile -------- */
-
-    /** --------- ContactService -------- */
-
-    /** --------- ConversationService -------- */
-
     object ConversationService {
 
         val getService: Method by lazy("${javaClass.name}.gs") {
@@ -44,10 +34,5 @@ object Methods {
         }
 
     }
-
-    /** --------- UserLabel -------- */
-    /** --------- CustomerMessageService -------- */
-
-    /** --------- CustomerServiceToolService -------- */
 
 }

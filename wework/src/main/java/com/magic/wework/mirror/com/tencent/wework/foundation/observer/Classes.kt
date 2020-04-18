@@ -15,6 +15,12 @@ object Classes {
         findClassIfExists("$packageName.IConversationListObserver", classLoader!!)
     }
 
+    val IConversationListObserverImpl: Class<*> by lazy("${javaClass.name}.icloi_fct$32hch$44") {
+        findClassesInPackage(classLoader!!, classes!!, "")
+            .filterByInterfaces(IConversationListObserver)
+            .firstOrNull()
+    }
+
     val IConversationObserver: Class<*> by lazy("${javaClass.name}.IConversationObserver") {
         findClassIfExists("$packageName.IConversationObserver", classLoader!!)
     }
@@ -24,7 +30,6 @@ object Classes {
             .filterByInterfaces(IConversationObserver)
             .firstOrNull()
     }
-
 
 }
 

@@ -137,18 +137,6 @@ object ReflecterHelper {
             }
     }
 
-    @JvmStatic
-    fun findFieldsWithGenericType(clazz: Class<*>, genericTypeName: String): List<Field> {
-        val fields = clazz.declaredFields.filter { it.genericType.toString() == genericTypeName }
-        return when (fields.isNotEmpty()) {
-            true -> fields
-            false -> if (clazz.superclass != null) findFieldsWithGenericType(
-                clazz.superclass!!,
-                genericTypeName
-            ) else listOf()
-        }
-    }
-
     /** 通过其他方式过滤类 */
     class Classes( val classes: List<Class<*>>) {
 
@@ -158,35 +146,6 @@ object ReflecterHelper {
                     if (it.interfaces.contains(interfaceClasses[i])) return@filter true
                 }
                 return@filter false
-            })
-
-        fun filterBySuper(superClass: Class<*>?): Classes =
-            Classes(classes.filter { it.superclass == superClass })
-
-        fun filterByEnclosingClass(enclosingClass: Class<*>?): Classes =
-            Classes(classes.filter { it.enclosingClass == enclosingClass })
-
-        fun filterBySubclass(subClass: Class<*>): Classes =
-            Classes(classes.mapNotNull { it.asSubclass(subClass) })
-
-        fun filterByMethod(returnType: Class<*>?, methodName: String, vararg parameterTypes: Class<*>): Classes =
-            Classes(classes.filter { clazz ->
-                val method = findMethodIfExists(clazz, methodName, *parameterTypes)
-                return@filter method != null && method.returnType == returnType ?: method.returnType
-            })
-
-        fun filterByMethod(returnType: Class<*>?, vararg parameterTypes: Class<*>): Classes =
-            Classes(classes.filter { clazz ->
-                findMethodsByExactParameters(clazz, returnType, *parameterTypes).isNotEmpty()
-            })
-
-        fun filterByField(fieldName: String, fieldClazz: Class<*>): Classes =
-            filterByField(fieldName, fieldClazz.canonicalName ?: "")
-
-        fun filterByField(fieldName: String, fieldType: String): Classes =
-            Classes(classes.filter { clazz ->
-                val field = findFieldIfExists(clazz, fieldName)
-                return@filter field != null && field.type.canonicalName == fieldType
             })
 
         fun firstOrNull(): Class<*>? {
@@ -201,11 +160,6 @@ object ReflecterHelper {
 
     /** 通过其他方式过滤方法 */
     class Methods(private val methods: List<Method>) {
-
-        fun isNotEmpty(): Boolean = methods.isNotEmpty()
-
-        fun filter(func: (it: Method) -> Boolean): Methods =
-            Methods(methods.filter { func(it) })
 
         fun firstOrNull(): Method? {
             if (methods.isNotEmpty()) {

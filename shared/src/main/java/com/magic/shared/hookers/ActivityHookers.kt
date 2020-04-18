@@ -41,17 +41,6 @@ object ActivityHookers : HookerCenter() {
                 iMethodAfter = "onActivityResumed",
                 needObject = true
             )
-        "onActivityResulting",
-        "onActivityResulted" ->
-            iMethodNotifyHooker(
-                clazz = Clazz.Activity,
-                method = "onActivityResult",
-                iClazz = IActivityHooker::class.java,
-                iMethodBefore = "onActivityResulting",
-                iMethodAfter = "onActivityResulted",
-                needObject = true,
-                parameterTypes = *arrayOf(Clazz.Int, Clazz.Int, Clazz.Intent)
-            )
         else -> throw IllegalArgumentException("Unknown event: $event")
     }
 

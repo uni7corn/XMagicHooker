@@ -154,4 +154,86 @@ object Methods {
 
     }
 
+    object IConversationListObserver {
+
+        fun getMethodByName(name: String): Method? {
+            return when (name) {
+                "onReconvergeConversation" -> onReconvergeConversation
+                "onReloadConvsProperty" -> onReloadConvsProperty
+                "onSyncStateChanged" -> onSyncStateChanged
+                "onAddConversations" -> onAddConversations
+                "onExitConversation" -> onExitConversation
+                else -> null
+            }
+        }
+
+        val onReconvergeConversation: Method by lazy("${javaClass.name}.OnReconvergeConversation") {
+            findMethodIfExists(Classes.IConversationListObserverImpl, "OnReconvergeConversation")
+        }
+
+        val onReloadConvsProperty: Method by lazy("${javaClass.name}.OnReloadConvsProperty") {
+            findMethodIfExists(Classes.IConversationListObserverImpl, "OnReloadConvsProperty")
+        }
+
+        val onSyncStateChanged: Method by lazy("${javaClass.name}.OnSyncStateChanged") {
+            findMethodIfExists(
+                Classes.IConversationListObserverImpl,
+                "OnSyncStateChanged",
+                Clazz.Int, Clazz.Int
+            )
+        }
+
+        val onAddConversations: Method by lazy("${javaClass.name}.onAddConversations") {
+            findMethodIfExists(Classes.IConversationListObserverImpl, "onAddConversations")
+        }
+
+        val onExitConversation: Method by lazy("${javaClass.name}.onExitConversation") {
+            findMethodIfExists(
+                Classes.IConversationListObserverImpl,
+                "onExitConversation",
+                Conversation
+            )
+        }
+    }
+
+    object IEnterpriseCustomerServiceObserver {
+
+        fun getMethodByName(name: String): Method? =
+            javaClass.declaredFields.filter {
+                it.name.equals(
+                    name,
+                    true
+                )
+            }.firstOrNull()?.get(this) as? Method
+
+        val OnCustomerListChange: Method by lazy("${javaClass.name}.OnCustomerListChange") {
+            findMethodIfExists(Classes.IConversationObserver, "OnCustomerListChange", Conversation)
+        }
+
+        val OnCustomerStaffListChange: Method by lazy("${javaClass.name}.OnCustomerStaffListChange") {
+            findMethodIfExists(
+                Classes.IConversationObserver,
+                "OnCustomerStaffListChange",
+                Conversation
+            )
+        }
+
+        val OnMyAdminServiceGroupsChanged: Method by lazy("${javaClass.name}.OnMyAdminServiceGroupsChanged") {
+            findMethodIfExists(
+                Classes.IConversationObserver,
+                "OnMyAdminServiceGroupsChanged",
+                Conversation
+            )
+        }
+
+        val OnServiceGroupListChanged: Method by lazy("${javaClass.name}.OnServiceGroupListChanged") {
+            findMethodIfExists(
+                Classes.IConversationObserver,
+                "OnServiceGroupListChanged",
+                Conversation
+            )
+        }
+
+    }
+
 }

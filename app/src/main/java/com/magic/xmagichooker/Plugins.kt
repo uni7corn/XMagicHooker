@@ -14,7 +14,6 @@ import com.magic.wework.hookers.interfaces.IApplicationHooker
 import com.magic.wework.hookers.interfaces.IConversationHooker
 import com.magic.wework.apis.com.tencent.wework.foundation.model.Conversation
 import com.magic.wework.apis.com.tencent.wework.foundation.model.Message
-import com.magic.wework.apis.com.tencent.wework.foundation.notification.NotificationInfo
 
 object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker {
 
@@ -321,19 +320,19 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker {
 //                                    } else if (text.startsWith("获取")) {
 //                                        var contactType = 0
 //                                        when (String(textMessage.content)) {
-//                                            "获取我的微信联系人" -> contactType = ContactService.CONTACT_TYPE_RCT_WEIXIN_FRIENDS_V30
-//                                            "获取我的手机联系人" -> contactType = ContactService.CONTACT_TYPE_RCT_MOBILE_FRIENDS_V30
-//                                            "获取推荐的好友" -> contactType = ContactService.CONTACT_TYPE_RCT_RECOMMEND_FRIENDS_V30
-//                                            "获取我的同事" -> contactType = ContactService.CONTACT_TYPE_RCT_WORKMATE
-//                                            "获取我的客户" -> contactType = ContactService.CONTACT_TYPE_RCT_FRIEND_CUSTOMER
-//                                            "获取待添加的客户" -> contactType = ContactService.CONTACT_TYPE_RCT_APPLY
-//                                            "获取内部联系客户" -> contactType = ContactService.CONTACT_TYPE_INNER_SERVICE_CONTACTS
-//                                            "获取联系群组"  -> contactType = ContactService.CONTACT_TYPE_RCT_CONTACTGROUP
-//                                            "获取历史好友"  -> contactType = ContactService.CONTACT_TYPE_RCT_FRIEND_HISTORY
-//                                            "获取加星联系人"  -> contactType = ContactService.CONTACT_TYPE_STAR_CONTACTS
-//                                            "获取其他组织"  -> contactType = ContactService.CONTACT_TYPE_RCT_OTHER_CORP
-//                                            "获取保存的群组"  -> contactType = ContactService.CONTACT_TYPE_GROUP_MEM
-//                                            "获取我的好友" -> contactType = ContactService.CONTACT_TYPE_RCT_FRIEND
+//                                            "获取我的微信联系人" -> contactType
+//                                            "获取我的手机联系人" -> contactType
+//                                            "获取推荐的好友" -> contactType
+//                                            "获取我的同事" -> contactType
+//                                            "获取我的客户" -> contactType
+//                                            "获取待添加的客户" -> contactType
+//                                            "获取内部联系客户" -> contactType =
+//                                            "获取联系群组"  -> contactType =
+//                                            "获取历史好友"  -> contactType =
+//                                            "获取加星联系人"  -> contactType =
+//                                            "获取其他组织"  -> contactType =
+//                                            "获取保存的群组"  -> contactType = .CONTACT_TYPE_GROUP_MEM
+//                                            "获取我的好友" -> contactType = .CONTACT_TYPE_RCT_FRIEND
 //                                        }
 //                                    } else if (text.startsWith("查看指令集")) {
 //                                    }

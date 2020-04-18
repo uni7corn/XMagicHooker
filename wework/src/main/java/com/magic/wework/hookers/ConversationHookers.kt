@@ -70,14 +70,6 @@ object ConversationHookers : HookerCenter() {
                     iMethodAfter = event,
                     parameterTypes = *arrayOf(Conversation, Message, Clazz.Int)
                 )
-            "onMessageUpdate" ->
-                iMethodNotifyHooker(
-                    clazz = IConversationObserverImpl,
-                    method = IConversationObserver.getMethodByName(event),
-                    iClazz = IConversationHooker::class.java,
-                    iMethodAfter = event,
-                    parameterTypes = *arrayOf(Conversation, Message)
-                )
             "onUnReadCountChanged" ->
                 iMethodNotifyHooker(
                     clazz = IConversationObserverImpl,
