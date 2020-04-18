@@ -71,18 +71,6 @@ abstract class HookerCenter : IHookerProvider {
             iClazz, iMethodBefore, iMethodAfter,
             needObject, needResult, "notify", *parameterTypes
         )
-
-    fun iConstructorNotifyHooker(
-        clazz: Class<*>?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iConstructorHooker(
-            clazz,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notify", *parameterTypes
-        )
-
     /**
      * 通知所有正在观察某个事件的观察者(并行）
      *
@@ -178,10 +166,6 @@ abstract class HookerCenter : IHookerProvider {
         vararg parameterTypes: Class<*>
     ): Hooker {
         return Hooker {
-            Log.e(
-                HookerCenter::class.java.name,
-                "iMethodHooker: ${clazz}  method: ${method}  iMethodBefore: ${iMethodBefore}   iMethodAfter: ${iMethodAfter}"
-            )
             if (clazz == null || method == null) return@Hooker
             XposedHelpers.findAndHookMethod(clazz, method, *parameterTypes,
                 object : XC_MethodHook() {
@@ -214,10 +198,6 @@ abstract class HookerCenter : IHookerProvider {
                 object : XC_MethodHook() {
                     override fun beforeHookedMethod(param: MethodHookParam?) {
                         if (iClazz == null || iMethodBefore == null) return
-                        Log.e(
-                            HookerCenter::class.java.name,
-                            "beforeHook    ${clazz.name}  :  $iMethodBefore"
-                        )
                         iInvoke(iClazz, iMethodBefore, needObject, needResult, param, notifyType)
                     }
 
@@ -253,18 +233,7 @@ abstract class HookerCenter : IHookerProvider {
                 notify(method) {
                     iMethod?.invoke(it, *args.toTypedArray())
                 }
-            "notifyParallel" ->
-                notifyParallel(method) {
-                    iMethod?.invoke(it, *args.toTypedArray())
-                }
-            "notifyForBypassFlags" ->
-                notifyForBypassFlags(method, param!!) {
-                    iMethod?.invoke(it, *args.toTypedArray()) as? Boolean ?: false
-                }
-            "notifyForOperations" ->
-                notifyForOperations(method, param!!) {
-                    iMethod?.invoke(it, *args.toTypedArray()) as Operation<Any>
-                }
+            else -> {}
         }
     }
 }

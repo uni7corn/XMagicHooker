@@ -13,17 +13,9 @@ object Clazz {
     val Map = Map::class.java
     val Object = Object::class.java
     val String = String::class.java
-    val CharSequence = CharSequence::class.java
-    val Throwable = Throwable::class.java
 
     val Activity = android.app.Activity::class.java
-    val AdapterView = android.widget.AdapterView::class.java
-    val AdapterView_OnItemClickListener = android.widget.AdapterView.OnItemClickListener::class.java
-    val AttributeSet = android.util.AttributeSet::class.java
-    val BaseAdapter = android.widget.BaseAdapter::class.java
     val Bundle = android.os.Bundle::class.java
-    val Button = android.widget.Button::class.java
-    val Callback = android.os.Handler.Callback::class.java
     val Configuration = android.content.res.Configuration::class.java
     val ContentValues = android.content.ContentValues::class.java
     val Context = android.content.Context::class.java
@@ -50,7 +42,5 @@ object Clazz {
     var LongArray = kotlin.LongArray::class.java
     val ObjectArray = Array<Any>::class.java
     val StringArray = Array<String>::class.java
-
-    fun arrayOf(clazz: Class<*>): Class<*> = java.lang.reflect.Array.newInstance(clazz, 0).javaClass
 
 }

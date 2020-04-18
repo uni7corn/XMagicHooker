@@ -43,12 +43,6 @@ class MediaCodecHelper(filePath: String) {
     fun initDecoder() {
         for (i in 0..mMediaExtractor.trackCount) {
             val mediaFormat = mMediaExtractor.getTrackFormat(i)
-            try {
-                mSampleRate = mediaFormat.getInteger(MediaFormat.KEY_SAMPLE_RATE)
-                mBitRate = mediaFormat.getInteger(MediaFormat.KEY_BIT_RATE)
-            } catch (t: Throwable) {
-                Log.e(MediaCodecHelper.javaClass.name, "initDecoder catch: ${t.message}")
-            }
             var mime = mediaFormat.getString(MediaFormat.KEY_MIME)
             if (mime.equals("audio/ffmpeg", true)) {
                 mime = MediaFormat.MIMETYPE_AUDIO_MPEG
@@ -81,35 +75,7 @@ class MediaCodecHelper(filePath: String) {
             try {
                 val inIndex = decoder.dequeueInputBuffer(TIMEOUT_US)
                 if (inIndex > 0) {
-                    var inputBuffers = decoder.getInputBuffer(inIndex)
-                    var sampleSize = mMediaExtractor.readSampleData(inputBuffers!!, 0)
-                    if (sampleSize < 0) {
-                        decoder.queueInputBuffer(inIndex, 0, 0, 0, MediaCodec.BUFFER_FLAG_END_OF_STREAM)
-                        isEOS = true
-                    } else {
-                        decoder.queueInputBuffer(inIndex, 0, sampleSize, mMediaExtractor.sampleTime, 0)
-                        mMediaExtractor.advance()
-                    }
                     when (val outIndex = decoder.dequeueOutputBuffer(info, TIMEOUT_US)) {
-                        MediaCodec.INFO_OUTPUT_BUFFERS_CHANGED -> {
-
-                        }
-                        MediaCodec.INFO_OUTPUT_FORMAT_CHANGED -> {
-
-                        }
-                        MediaCodec.INFO_TRY_AGAIN_LATER -> {
-
-                        }
-                        else -> {
-                            var outputBuffer = decoder.getOutputBuffer(outIndex)
-                            if (outputBuffer != null) {
-                                val chunk = ByteArray(info.size)
-                                outputBuffer.get(chunk)
-                                outputBuffer.clear()
-                                fileOutputStream.write(chunk)
-                                decoder.releaseOutputBuffer(outIndex, false)
-                            }
-                        }
                     }
                     if (info.flags and MediaCodec.BUFFER_FLAG_END_OF_STREAM != 0) {
                         fileOutputStream.close()

@@ -33,7 +33,7 @@ object XposedUtil {
     @JvmStatic
     fun postHooker(hooker: Hooker) {
         managerHandler.post {
-            tryHook { hooker.hook() }
+            hooker.hook()
         }
     }
 

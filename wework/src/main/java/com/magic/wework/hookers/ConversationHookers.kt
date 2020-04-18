@@ -78,14 +78,6 @@ object ConversationHookers : HookerCenter() {
                     iMethodAfter = event,
                     parameterTypes = *arrayOf(Conversation, Message)
                 )
-            "onRemoveMessages" ->
-                iMethodNotifyHooker(
-                    clazz = IConversationObserverImpl,
-                    method = IConversationObserver.getMethodByName(event),
-                    iClazz = IConversationHooker::class.java,
-                    iMethodAfter = event,
-                    parameterTypes = *arrayOf(Conversation, Clazz.arrayOf(Message))
-                )
             "onUnReadCountChanged" ->
                 iMethodNotifyHooker(
                     clazz = IConversationObserverImpl,
