@@ -7,11 +7,5 @@ import com.magic.kernel.MagicGlobal.classes
 import com.magic.kernel.helper.ReflecterHelper.findClassesInPackage
 
 object Classes {
-    private val packageName = "${MagicGlobal.packageName}.${javaClass.name.replaceBeforeLast("android", "")}".removeSuffix(".${javaClass.simpleName}")
 
-    val NotificationManagerCompat: Class<*> by lazy ("NotificationManagerCompat") {
-        findClassesInPackage(classLoader!!, classes!!, packageName)
-                .filterByField("android.app.NotificationManager")
-                .firstOrNull()
-    }
 }

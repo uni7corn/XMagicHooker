@@ -95,40 +95,6 @@ abstract class HookerCenter : IHookerProvider {
         }
     }
 
-    fun iMethodNotifyParallelHooker(
-        clazz: Class<*>?, method: Method?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iMethodHooker(
-            clazz, method?.name,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyParallel", *parameterTypes
-        )
-
-    fun iMethodNotifyParallelHooker(
-        clazz: Class<*>?, method: String?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iMethodHooker(
-            clazz, method,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyParallel", *parameterTypes
-        )
-
-    fun iConstructorNotifyParallelHooker(
-        clazz: Class<*>?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iConstructorHooker(
-            clazz,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyParallel", *parameterTypes
-        )
-
-
     /**
      * 通知所有正在观察某个事件的观察者, 并收集它们的反馈
      *
@@ -165,34 +131,12 @@ abstract class HookerCenter : IHookerProvider {
     }
 
     fun iMethodNotifyForBypassFlagsHooker(
-        clazz: Class<*>?, method: Method?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iMethodHooker(
-            clazz, method?.name,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyForBypassFlags", *parameterTypes
-        )
-
-    fun iMethodNotifyForBypassFlagsHooker(
         clazz: Class<*>?, method: String?,
         iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
         needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
     ): Hooker =
         iMethodHooker(
             clazz, method,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyForBypassFlags", *parameterTypes
-        )
-
-    fun iConstructorNotifyForBypassFlagsHooker(
-        clazz: Class<*>?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iConstructorHooker(
-            clazz,
             iClazz, iMethodBefore, iMethodAfter,
             needObject, needResult, "notifyForBypassFlags", *parameterTypes
         )
@@ -223,40 +167,6 @@ abstract class HookerCenter : IHookerProvider {
             }
         }
     }
-
-    fun iMethodNotifyForOperationsHooker(
-        clazz: Class<*>?, method: Method?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iMethodHooker(
-            clazz, method?.name,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyForOperations", *parameterTypes
-        )
-
-    fun iMethodNotifyForOperationsHooker(
-        clazz: Class<*>?, method: String?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iMethodHooker(
-            clazz, method,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyForOperations", *parameterTypes
-        )
-
-    fun iConstructorNotifyForOperationsHooker(
-        clazz: Class<*>?,
-        iClazz: Class<*>?, iMethodBefore: String? = null, iMethodAfter: String? = null,
-        needObject: Boolean = false, needResult: Boolean = false, vararg parameterTypes: Class<*>
-    ): Hooker =
-        iConstructorHooker(
-            clazz,
-            iClazz, iMethodBefore, iMethodAfter,
-            needObject, needResult, "notifyForOperations", *parameterTypes
-        )
-
 
     /**
      * hookMethod
