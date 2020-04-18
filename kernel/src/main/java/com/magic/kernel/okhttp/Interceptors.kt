@@ -78,34 +78,4 @@ object Interceptors {
                 }
             }
         }
-
-    /** 上传进度 */
-    fun getProgressRequestInterceptor(iProgressRequestCallback: IProgressRequestCallback) =
-        object : Interceptor {
-            override fun intercept(chain: Interceptor.Chain): Response {
-                var request = chain.request()
-                val requestBody = request.body
-                if (requestBody != null) {
-                    request = request.newBuilder()
-                        .method(request.method, ProgressRequestBody(requestBody, iProgressRequestCallback))
-                        .build()
-                }
-                return chain.proceed(request)
-            }
-        }
-
-    /** 下载进度 */
-    fun getProgressResponseInterceptor(iProgressResponseCallback: IProgressResponseCallback) =
-        object : Interceptor {
-            override fun intercept(chain: Interceptor.Chain): Response {
-                var response = chain.proceed(chain.request())
-                val responseBody = response.body
-                if (responseBody != null) {
-                    response = response.newBuilder()
-                        .body(ProgressResponseBody(response.body!!, iProgressResponseCallback))
-                        .build()
-                }
-                return response
-            }
-        }
 }

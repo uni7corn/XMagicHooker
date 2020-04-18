@@ -55,7 +55,7 @@ object ReflecterHelper {
         val classes = Classes(trie.search(packageName, depth).mapNotNull { name ->
                 findClassIfExists(name, classLoader)
             })
-        return classes.also { classCache[key] = classes }
+        return classes
     }
 
     /** ------------- Method ------------ */
@@ -117,12 +117,7 @@ object ReflecterHelper {
                 Log.e(ReflecterHelper.javaClass.name, "findMethodsByExactParameters:${clazz.name}   ${method.name}")
             }
         }
-        return when (methods.isNotEmpty()) {
-            true -> Methods(methods).also { methodCache[fullMethodName] = it }
-            else -> (if (clazz.superclass != null) findMethodsByExactParameters(clazz.superclass!!, returnType, *parameterTypes
-                    ) else Methods(listOf()))
-                .also { methodCache[fullMethodName] = it }
-        }
+        return Methods(methods)
     }
 
     @JvmStatic
@@ -137,26 +132,9 @@ object ReflecterHelper {
             fieldCache[fullFieldName]?.firstOrNull()
         } else try {
                 clazz.getDeclaredField(fieldName)
-                    .apply { isAccessible = true }
-                    .also { fieldCache[fullFieldName] = Fields(listOf(it)) }
             } catch (_: NoSuchFieldException) {
-                if (clazz.superclass != null) findFieldIfExists(clazz.superclass!!, fieldName) else null
+                null
             }
-    }
-
-    @JvmStatic
-    fun findFieldsWithType(clazz: Class<*>, type: Class<*>): Fields =
-        findFieldsWithType(clazz, type.name)
-
-    @JvmStatic
-    fun findFieldsWithType(clazz: Class<*>, typeName: String): Fields {
-        val fullFieldName = "${clazz.name}#$typeName#type"
-        val fields = clazz.declaredFields.filter { it.type.name == typeName }
-        return when (fields.isNotEmpty()) {
-            true -> Fields(fields)
-            false -> (if (clazz.superclass != null) findFieldsWithType(clazz.superclass!!, typeName) else Fields(listOf()))
-                .also { fieldCache[fullFieldName] = it }
-        }
     }
 
     @JvmStatic
@@ -211,12 +189,6 @@ object ReflecterHelper {
                 return@filter field != null && field.type.canonicalName == fieldType
             })
 
-        fun filterByField(fieldClazz: Class<*>): Classes =
-            filterByField(fieldClazz.name)
-
-        fun filterByField(fieldType: String): Classes =
-            Classes(classes.filter { findFieldsWithType(it, fieldType).isNotEmpty() })
-
         fun firstOrNull(): Class<*>? {
             if (classes.isNotEmpty()) {
                 val names = classes.map { it.canonicalName }
@@ -230,33 +202,10 @@ object ReflecterHelper {
     /** 通过其他方式过滤方法 */
     class Methods(private val methods: List<Method>) {
 
-        fun filterByReturenType(clazz: Class<*>): Methods =
-            Methods(methods.filter { it.returnType == clazz })
-
-        fun filterByReturenSubType(subClazz: Class<*>): Methods =
-            Methods(methods.mapNotNull {
-                return@mapNotNull try {
-                    Log.e(ReflecterHelper.javaClass.name, "filterByReturenSubType before: ${it.returnType.name}")
-                    it.returnType.asSubclass(subClazz)
-                    it
-                } catch (_: Throwable) {
-                    Log.e(ReflecterHelper.javaClass.name, "filterByReturenSubType fail: ${subClazz.name}")
-                    null
-                }
-            })
-
-        fun filterByModifiers(vararg modifiers: Int): Methods =
-            if (modifiers.size < 0) this else Methods(methods.filter { it.modifiers == modifiers.reduce { acc, i -> acc.or(i) } })
-
         fun isNotEmpty(): Boolean = methods.isNotEmpty()
-
-        fun isEmpty(): Boolean = methods.isEmpty()
 
         fun filter(func: (it: Method) -> Boolean): Methods =
             Methods(methods.filter { func(it) })
-
-        fun mapNotNull(func: (it: Method) -> Method?): Methods =
-            Methods(methods.mapNotNull{ func(it) })
 
         fun firstOrNull(): Method? {
             if (methods.isNotEmpty()) {
@@ -275,14 +224,6 @@ object ReflecterHelper {
             if (modifiers.size < 0) this else Fields(fields.filter { it.modifiers == modifiers.reduce { acc, i -> acc.or(i) } })
 
         fun isNotEmpty(): Boolean = fields.isNotEmpty()
-
-        fun isEmpty(): Boolean = fields.isEmpty()
-
-        fun filter(func: (it: Field) -> Boolean): Fields =
-            Fields(fields.filter { func(it) })
-
-        fun mapNotNull(func: (it: Field) -> Field?): Fields =
-            Fields(fields.mapNotNull{ func(it) })
 
         fun firstOrNull(): Field? {
             if (fields.isNotEmpty()) {

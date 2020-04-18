@@ -154,10 +154,7 @@ object ParserHelper {
             private fun search(packageName: String, depth: Int, pos: Int): List<String> {
                 val delimiterAt = packageName.indexOf('.', pos)
                 if (delimiterAt == -1) {
-                    return when (packageName.isEmpty()) {
-                        true -> classes
-                        false -> children[packageName.substring(pos)]?.get(depth) ?: emptyList()
-                    }
+                    children[packageName.substring(pos)]?.get(depth) ?: emptyList()
                 }
                 val pkg = packageName.substring(pos, delimiterAt)
                 val next = children[pkg] ?: return emptyList()

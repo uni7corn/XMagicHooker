@@ -27,12 +27,6 @@ object HttpClients {
         val clientBuilder = OkHttpClient.Builder()
             .addInterceptor(Interceptors.getRetryInterceptor())
             .addInterceptor(Interceptors.getCacheInterceptor(IHttpConfigs.CachePolicy.DISK, type))
-        if (iProgressRequestCallback != null) {
-            clientBuilder.addInterceptor(Interceptors.getProgressRequestInterceptor(iProgressRequestCallback))
-        }
-        if (iProgressResponseCallback != null) {
-            clientBuilder.addInterceptor(Interceptors.getProgressResponseInterceptor(iProgressResponseCallback))
-        }
 
         val request = Request.Builder().url(urlString).build()
         clientBuilder.build().newCall(request).enqueue(object : Callback {

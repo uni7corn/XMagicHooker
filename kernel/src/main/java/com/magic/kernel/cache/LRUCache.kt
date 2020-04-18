@@ -60,10 +60,7 @@ object LRUCache {
             true -> key.substring(0, indexOf) + (if (params != null) params?.toString() else "") + key.substring(indexOf)
             false -> key + (if (params != null) params?.toString() else "")
         }
-        return when(md5) {
-            true -> key.MD5()
-            false -> key
-        }
+        return key.MD5()
     }
 
     private fun getCacheDir(dir: String = ""): String {

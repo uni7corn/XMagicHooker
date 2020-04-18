@@ -49,8 +49,6 @@ class LRUDiskCache(val cacheDir: String, val maxCacheSize: Long = 1024 * 1024 * 
             val file = File(path).also { if (it.parentFile?.exists() == false) it.parentFile?.mkdirs() }
             val fileOutputStream = FileOutputStream(file)
             BufferedOutputStream(fileOutputStream).use { it.write(content) }
-            cachedSize += content.size
-            linkedHashMap[file.path] = file.lastModified()
             file.path
         } catch (e: Throwable) {
             Log.e(LRUDiskCache::class.java.name, "cache fail: ${e.message}")
@@ -112,7 +110,6 @@ class LRUDiskCache(val cacheDir: String, val maxCacheSize: Long = 1024 * 1024 * 
     fun clearCache(file: File? = null, callback: () -> Unit) {
         val futureTask = object : FutureTask<Unit>(Callable {
             if (file == null) {
-                linkedHashMap.clear()
                 cachedSize = 0
                 File(cacheDir).deleteOnExit()
             } else {
