@@ -64,7 +64,7 @@
 当然还有更多的功能不仅限于上述，更多可以查阅我针对企业微信的xposed学习的成果，这些成果的部分我将在后续通过讲解并上传：
 
 
-![功能列表截图](https://upload-images.jianshu.io/upload_images/2010692-f64faa9ac3ba1927.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![功能列表截图](http://ww1.sinaimg.cn/mw690/92ce04b2gy1gdxlgpkgq3j2234146alw.jpg)
 
 
 ### 注意：
@@ -75,7 +75,7 @@
 如果你在学习过程中遇到问题，你可以直接提交issue，或者直接联系我，在有余力之余我还是乐意结识有共同爱好的朋友，请添加时备注：xposed、xmagichooker+名字（当然你也可以只填姓，方便我备注）
 
 
-![我的联系方式](https://upload-images.jianshu.io/upload_images/2010692-d90a8f156d964bec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![我的联系方式](http://ww1.sinaimg.cn/mw690/92ce04b2gy1gdxlhwf03sj20by0by0ti.jpg)
 
 
 
