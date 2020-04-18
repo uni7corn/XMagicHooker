@@ -48,13 +48,7 @@ object Methods {
         }
 
         val onAddMessages: Method by lazy("${javaClass.name}.onAddMessages") {
-            findMethodsByExactParameters(
-                Classes.IConversationObserverImpl,
-                null,
-                Conversation,
-                Clazz.arrayOf(Message),
-                Clazz.Boolean
-            ).firstOrNull()
+            findMethodIfExists(Classes.IConversationObserverImpl, "onAddMessages", Conversation)
         }
 
         val onChangeOwner: Method by lazy("${javaClass.name}.onChangeOwner") {
@@ -105,12 +99,7 @@ object Methods {
         }
 
         val onRemoveMessages: Method by lazy("${javaClass.name}.onRemoveMessages") {
-            findMethodsByExactParameters(
-                Classes.IConversationObserverImpl,
-                null,
-                Conversation,
-                Clazz.arrayOf(Message)
-            ).firstOrNull()
+            findMethodIfExists(Classes.IConversationObserverImpl, "onRemoveMessages", Conversation)
         }
 
         val onSetAllBan: Method by lazy("${javaClass.name}.onSetAllBan") {

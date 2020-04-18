@@ -8,9 +8,9 @@ object WwEngine {
     var hookerCenters: List<HookerCenter> = listOf(
         ApplicationHookers,
 //        ContactHookers,
-        ConversationHookers,
+        ConversationHookers
 //        CustomerHookers,
-        NotificationHookers
+//        NotificationHookers
 //        DepartmentHookers
 //        UserLabelHookers
     )

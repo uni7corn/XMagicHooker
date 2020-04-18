@@ -12,12 +12,11 @@ import com.magic.shared.hookers.interfaces.IActivityHooker
 //import com.magic.wework.apis.com.tencent.wework.foundation.impl.WeworkServiceImpl
 import com.magic.wework.hookers.interfaces.IApplicationHooker
 import com.magic.wework.hookers.interfaces.IConversationHooker
-import com.magic.wework.hookers.interfaces.INotificationHooker
 import com.magic.wework.apis.com.tencent.wework.foundation.model.Conversation
 import com.magic.wework.apis.com.tencent.wework.foundation.model.Message
 import com.magic.wework.apis.com.tencent.wework.foundation.notification.NotificationInfo
 
-object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotificationHooker {
+object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker {
 
     /*  ------------------  IActivityHooker  ----------------- */
     override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
@@ -41,11 +40,6 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
         for (conv in conversationArr) {
             Log.e(Plugins.javaClass.name, "onAddConversations  ${Conversation.getInfo(conv)}")
         }
-//        ConversationApiImpl.newInstance().updateConversationCache(conversationArr)
-//        for (conversation in conversationArr) {
-//            val conv = Conversation(conversation)
-//            Log.e(Plugins::class.java.name, "onAddConversations   remoteId: ${conv.getInfo().remoteId}  -  name: ${conv.getInfo().name}  -  type: ${conv.getInfo().type}")
-//        }
     }
 
     override fun onExitConversation(conversation: Any) {
@@ -95,12 +89,8 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
 //                                        if (textSplits.size > 1) {
 //                                            val splits = textSplits[1].split(",")
 //                                            if (splits.size > 1) {
-//                                                MsgApiImpl.newInstance().sendTextualMessage(splits.first().trim().toLong(), splits.last())
-//                                            } else {
-//                                                MsgApiImpl.newInstance().sendTextualMessage(conv.getInfo().id, splits.first())
 //                                            }
 //                                        } else {
-//                                            MsgApiImpl.newInstance().sendTextualMessage(conv.getInfo().id, "log-发送消息指令错误，请输入:\n 发送消息:[userId/conversationId],消息内容")
 //                                        }
 //                                    } else if (text.startsWith("发送图片消息") || text.startsWith("发送语音消息") || text.startsWith("发送视频消息") || text.startsWith("发送文件消息")) {
 //                                        var type = IHttpConfigs.Type.DEFAULT
@@ -249,7 +239,6 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
 //                                    } else if (text.startsWith("免打扰")) {
 //                                    } else if (text.startsWith("取消免打扰")) {
 //                                    } else if (text.startsWith("获取缓存的联系人")) {
-//                                        MsgApiImpl.newInstance().sendTextualMessage(conv.getLocalId(), "log-获取缓存联系人: \n$userInfos")
 //                                    } else if (text.startsWith("获取我的二维码")) {
 //                                    } else if (text.startsWith("获取二维码")) {
 //                                        var type = ContactService.GETCONTACT_BY_QR_CODE
@@ -316,7 +305,6 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
 //                                            if (localPath != null) {
 //                                        })
 //                                    } else if (text.startsWith("获取绑定微信状态")) {
-//                                        MsgApiImpl.newInstance().sendTextualMessage(conv.getLocalId(), "log-获取绑定微信状态: ${ContactApiImpl.newInstance().getBindWxStatus()}")
 //                                    } else if (text.startsWith("删除联系人")) {
 //                                        when (textSplits.size > 1) {
 //                                            true -> {
@@ -324,12 +312,10 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
 //                                                            }
 //                                                        }
 //                                                    } else {
-//                                                        MsgApiImpl.newInstance().sendTextualMessage(conv.getInfo().id, "log-删除联系人: 未查找到联系人")
 //                                                    }
 //                                                }
 //                                            }
 //                                            false -> {
-//                                                MsgApiImpl.newInstance().sendTextualMessage(conv.getInfo().id, "log-删除联系人格式错误，请输入：\n删除联系人:[userid],[userid1]...")
 //                                            }
 //                                        }
 //                                    } else if (text.startsWith("获取")) {
@@ -350,7 +336,6 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
 //                                            "获取我的好友" -> contactType = ContactService.CONTACT_TYPE_RCT_FRIEND
 //                                        }
 //                                    } else if (text.startsWith("查看指令集")) {
-//                                        MsgApiImpl.newInstance().sendTextualMessage(conv.getInfo().id, "log-指令集: 获取${String(textMessage.content).substring(2)}: 失败")
 //                                    }
 //                                }
 //                            }
@@ -474,13 +459,6 @@ object Plugins: IActivityHooker, IApplicationHooker, IConversationHooker, INotif
         Log.e(Plugins.javaClass.name, "onUnReadCountChanged  ${Conversation.getInfo(conversation)}   $i   $i2")
 //        val conv = Conversation(conversation)
 //        Log.e(Plugins::class.java.name, "onUnReadCountChanged: ${conv.getInfo().remoteId}  -  ${conv.getInfo().name}  -  ${conv.getInfo().type}")
-    }
-
-
-    /*  ------------------  INotificationHooker  ----------------- */
-
-    override fun onObserve(i: Int, notificationInfo: Any) {
-        Log.e(Plugins.javaClass.name, "收到通知回调 onObserve:  ${NotificationInfo.parse(notificationInfo)}")
     }
 
     /*  ------------------  IContactHooker  ----------------- */

@@ -15,10 +15,6 @@ object Methods {
             findMethodIfExists(Classes.Application, "getInstance")
         }
 
-        val GetProfileManager: Method by lazy("${javaClass.name}.GetProfileManager") {
-            findMethodIfExists(Classes.Application, "GetProfileManager")
-        }
-
     }
 
     /** --------- ProfileManager -------- */
