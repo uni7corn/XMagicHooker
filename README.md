@@ -64,7 +64,7 @@
 当然还有更多的功能不仅限于上述，更多可以查阅我针对企业微信的xposed学习的成果，这些成果的部分我将在后续通过讲解并上传：
 
 
-![功能列表截图](my_contact_information.jpeg)
+![功能列表截图](xposed_functions.png)
 
 
 ### 注意：
