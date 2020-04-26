@@ -64,7 +64,7 @@
 当然还有更多的功能不仅限于上述，更多可以查阅我针对企业微信的xposed学习的成果，这些成果的部分我将在后续通过讲解并上传：
 
 
-![功能列表截图](https://github.com/ApterKing/XMagicHooker/blob/master/xposed_functions.png)
+![功能列表截图](my_contact_information.jpeg)
 
 
 ### 注意：
@@ -75,7 +75,7 @@
 如果你在学习过程中遇到问题，你可以直接提交issue，或者直接联系我，在有余力之余我还是乐意结识有共同爱好的朋友，请添加时备注：xposed、xmagichooker+名字（当然你也可以只填姓，方便我备注）
 
 
-![我的联系方式](https://github.com/ApterKing/XMagicHooker/blob/master/my_contact_information.jpeg)
+![我的联系方式](xposed_functions.png)
 
 
 
