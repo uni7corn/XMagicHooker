@@ -4,12 +4,6 @@ import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import com.magic.shared.hookers.interfaces.IActivityHooker
-//import com.magic.wework.apis.com.google.protobuf.nano.MessageNano
-//import com.magic.wework.apis.com.tencent.wework.contact.plugin.ContactApiImpl
-//import com.magic.wework.apis.com.tencent.wework.contact.plugin.ContactManagerApiImpl
-//import com.magic.wework.apis.com.tencent.wework.contact.plugin.DepartmentApiImpl
-//import com.magic.wework.apis.com.tencent.wework.contact.plugin.UserManagerApiImpl
-//import com.magic.wework.apis.com.tencent.wework.foundation.impl.WeworkServiceImpl
 import com.magic.wework.hookers.interfaces.IApplicationHooker
 import com.magic.wework.hookers.interfaces.IConversationHooker
 import com.magic.wework.apis.com.tencent.wework.foundation.model.Conversation
