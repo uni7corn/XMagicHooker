@@ -6,6 +6,7 @@ import com.magic.kernel.helper.ReflecterHelper.findMethodIfExists
 import com.magic.kernel.helper.ReflecterHelper.findMethodsByExactParameters
 import com.magic.wework.mirror.com.tencent.wework.foundation.model.Classes.Conversation
 import com.magic.wework.mirror.com.tencent.wework.foundation.model.Classes.Message
+import java.lang.reflect.Array
 import java.lang.reflect.Method
 
 object Methods {
@@ -48,7 +49,14 @@ object Methods {
         }
 
         val onAddMessages: Method by lazy("${javaClass.name}.onAddMessages") {
-            findMethodIfExists(Classes.IConversationObserverImpl, "onAddMessages", Conversation)
+//            findMethodIfExists(Classes.IConversationObserverImpl, "onAddMessages", Conversation)
+            findMethodsByExactParameters(
+                Classes.IConversationObserverImpl,
+                null,
+                Conversation,
+                Array.newInstance(Message, 0).javaClass,
+                Clazz.Boolean
+            ).firstOrNull()
         }
 
         val onChangeOwner: Method by lazy("${javaClass.name}.onChangeOwner") {
