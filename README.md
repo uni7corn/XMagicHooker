@@ -66,14 +66,14 @@
 
 ![功能列表截图](sources/xposed_functions.png)
 
-### 指令集执行设计
+### 指令集执行设计 
+
+**[websocket接口文档](https://docs.qq.com/doc/DS3h1UExIS3ZhR1Vw)**
 为了保证执行的可靠稳定性，针对上述功能**在客户端**设计了关于指令的队列处理，解决了很多复杂场景下的问题
 
 ![指令集接口文档](sources/cmd_api.png)
 
 如果需要查阅具体接口文档可以与我联系申请查看，我将毫无保留的开放设计理念和文档
-
-**[websocket接口文档](https://docs.qq.com/doc/DS3h1UExIS3ZhR1Vw)**
 
 ### 注意：
 为了避免某些xxx风险，我只是持续做一些分享，但并不会将完整代码上传，我所上传的基础核心，基本上你都可以在我所写的文章及有Android基础之上一步一步的去实现
