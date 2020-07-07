@@ -66,10 +66,9 @@
 
 ![功能列表截图](sources/xposed_functions.png)
 
-### 指令集执行设计 
+### **[websocket+protobuf接口文档](https://docs.qq.com/doc/DS3h1UExIS3ZhR1Vw)**
 
-**[websocket接口文档](https://docs.qq.com/doc/DS3h1UExIS3ZhR1Vw)**
-为了保证执行的可靠稳定性，针对上述功能**在客户端**设计了关于指令的队列处理，解决了很多复杂场景下的问题
+为了保证执行的可靠稳定性，针对上述功能**在客户端**设计了关于指令的队列处理，解决了很多复杂场景下的问题，具体见下图
 
 ![指令集接口文档](sources/cmd_api.png)
 
