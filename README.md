@@ -79,7 +79,6 @@
 
 ![demo-1](sources/demo-1.png)
 ![demo-2](sources/demo-2.png)
-![demo-4](sources/demo-4.png)
 
 ### 注意：
 为了避免某些xxx风险，我只是持续做一些分享，但并不会将完整代码上传，我所上传的基础核心，基本上你都可以在我所写的文章及有Android基础之上一步一步的去实现
