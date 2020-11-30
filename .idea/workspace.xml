@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="com.magic" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c11e379-c3c6-4fb4-be19-48513c33efe9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/Plugins.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/Plugins.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ReflecterHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ReflecterHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/SilkCodecHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/writer/AccFileWriter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/writer/AccWriter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/writer/IBaseWriter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/writer/PcmWriter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/writer/WavFileWriter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/writer/WavWriter.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/ActivityHookers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/ActivityHookers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/XLogHookers.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/interfaces/IDatabaseHooker.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/interfaces/IXLogHooker.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/android/support/v4/app/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/mars/xlog/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/mars/xlog/Methods.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/wcdb/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/wcdb/database/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/wcdb/support/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ConversationHookers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ConversationHookers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Fields.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Methods.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/Methods.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/callback/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Methods.kt" beforeDir="false" afterPath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Methods.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/pb/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/pb/Methods.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/notification/Classes.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/notification/Methods.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Classes.kt" beforeDir="false" afterPath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Classes.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Methods.kt" beforeDir="false" afterPath="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Methods.kt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="d2086ad7" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="XMagicHooker" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/Classes.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/Methods.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Classes.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ConversationHookers.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ApplicationHookers.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ReflecterHelper.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/interfaces/IConversationHooker.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/interfaces/IApplicationHooker.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Methods.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Classes.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Clazz.arrayOf</find>
+      <find>Clazz.arrayof</find>
+      <find>msgApiImpl</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wecomponent/MK.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/msg/model/MessageItem.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/pb/Classes.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/pb/Methods.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/Classes.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/Methods.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Methods.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Fields.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/contact/plugin/Methods.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/notification/Classes.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/Hooker.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/SilkCodecHelper.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Classes.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Classes.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/callback/Classes.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/AudioHelper.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/image/BitmapHelper.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/okhttp/HttpClients.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/okhttp/Interceptors.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/cache/LRUDiskCache.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/cache/LRUCache.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/logic/ConversationService.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/logic/DepartmentService.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/model/User.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/model/Conversation.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/msg/temp/ConversationApiImpl.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/msg/temp/MsgApiImpl.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/interfaces/IConversationHooker.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/interfaces/INotificationHooker.kt" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/mm/modelvoice/Methods.kt" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/android/support/v4/app/Classes.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/core/Clazz.kt" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/FileHookers.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/core/HookerCenter.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/audio/MediaCodecHelper.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/utils/XposedUtil.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/model/pb/WwUser.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/model/pb/WwMessage.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/logic/Application.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/model/Message.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/WwEngine.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/observer/IObservers.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ParserHelper.kt" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/ActivityHookers.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Methods.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Classes.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Methods.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/Plugins.kt" />
+        <option value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ConversationHookers.kt" />
+        <option value="$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ReflecterHelper.kt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="17" />
+    <option name="y" value="23" />
+    <option name="width" value="1423" />
+    <option name="height" value="831" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="XMagicHooker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="XMagicHookerShare" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kernel" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kernel" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c11e379-c3c6-4fb4-be19-48513c33efe9" name="Default Changelist" comment="" />
+      <created>1586945541282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586945541282</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="17" y="23" width="1423" height="831" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.29398987" />
+      <window_info id="Structure" order="4" side_tool="true" />
+      <window_info id="Build Variants" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" order="0" weight="0.47090665" />
+      <window_info anchor="bottom" id="Run" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" />
+      <window_info anchor="bottom" id="TODO" order="3" />
+      <window_info anchor="bottom" id="Android Profiler" order="4" />
+      <window_info anchor="bottom" id="Statistic" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.32882273" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" weight="0.4127199" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" weight="0.3294714" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
+      <window_info anchor="right" id="Flutter Outline" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Flutter Performance" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/core/Version.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/core/WaitChannel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ExtensionHelper.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/TryHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/media/image/BitmapHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2998">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/okhttp/HttpClients.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/okhttp/ICallbacks.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/okhttp/IHttpConfigs.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/okhttp/Interceptors.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/utils/CmdUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/utils/FileUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/utils/LogUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/utils/ParallelUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/utils/XposedUtil.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/MagicGlobal.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1063">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/MagicHooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-778">
+          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wecomponent/MK.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/apis/com/tencent/wework/foundation/observer/IObservers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/MainActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/Hooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ParserHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="151" column="13" lean-forward="true" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/apis/SharedEngine.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/interfaces/IDatabaseHooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/interfaces/IXLogHooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/XLogHookers.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/android/support/v4/app/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/mars/xlog/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/mars/xlog/Methods.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/wcdb/database/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/wcdb/support/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/mirror/com/tencent/wcdb/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/interfaces/IActivityHooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/com/magic/shared/hookers/ActivityHookers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/Methods.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/callback/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/Methods.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/magic/xmagichooker/Plugins.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2010">
+          <caret line="134" column="63" lean-forward="true" selection-start-line="134" selection-start-column="63" selection-end-line="134" selection-end-column="63" />
+          <folding>
+            <element signature="e#32#929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Methods.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/observer/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/Methods.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/model/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Methods.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/mirror/com/tencent/wework/foundation/logic/Classes.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ConversationHookers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/interfaces/IConversationHooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/interfaces/IApplicationHooker.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wework/src/main/java/com/magic/wework/hookers/ApplicationHookers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kernel/src/main/java/com/magic/kernel/helper/ReflecterHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="175" lean-forward="true" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="" />
+  </component>
+</project>
